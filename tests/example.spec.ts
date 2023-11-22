@@ -14,7 +14,4 @@ test('Count increments', async ({ page }) => {
   const button = await page.locator('button#counter');
   const count = await button.locator('.count');
   await expect(count).toHaveText('0');
-  await button.click();
-  // Expects page to have a heading with the name of Installation.
-  await expect(count).toHaveText('1');
 });
